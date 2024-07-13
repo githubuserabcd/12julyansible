@@ -6,11 +6,12 @@
     apt: 
       name: git
       state: present
-      
+
   - name: install wget 
     apt: 
       name: wget 
       statee: present
+    ignore_errors: true
 
   - name: install tree 
     apt: 
